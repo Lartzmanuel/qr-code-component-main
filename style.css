@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.card-component {
+    padding: 15px;
+    width: 80%;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+}
+
+.image, .text-content{
+    width: 100%;
+}
+
+.image > img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.text-content{
+    padding: 0 20px;
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 700;
+    color: hsl(218, 44%, 22%);
+    padding-top: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.para {
+    font-size: 15px;
+    text-align: center;
+    padding: 15px 0;
+    color: hsl(212, 45%, 89%);
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px){
+    .card-component{
+        max-width: 300px;
+        margin: auto;
+    }
+}
+
